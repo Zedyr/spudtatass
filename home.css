@@ -1,0 +1,19 @@
+/* Home tab */
+.hero .wrap{display:grid;gap:.8rem;align-items:center;justify-items:start}
+@media(min-width:860px),(max-height:480px){.hero .wrap{grid-template-columns:1.05fr 1fr;gap:2rem}}
+.brandline{font-family:"Baloo 2","Trebuchet MS",sans-serif;font-weight:800;font-size:1.1rem;color:var(--orange);letter-spacing:.04em;text-transform:uppercase}
+.tagline{display:inline-block;margin-top:.7rem;background:var(--brown);color:var(--gold);font-weight:800;font-size:clamp(1rem,3.2vw,1.45rem);padding:.3rem 1rem;border-radius:99px;transform:rotate(-2deg);box-shadow:0 4px 0 var(--orange)}
+.hero p.lead{font-size:1.05rem;margin-top:.6rem}
+@media(max-height:720px){.hero .lead{display:block;font-size:.95rem}.hero .lead{display:none}}
+.ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}
+.heroart{background:radial-gradient(circle at 35% 30%,#ffe38a,var(--gold) 70%);border:4px solid var(--brown);border-radius:50% 46% 52% 48%/48% 52% 46% 50%;padding:7%;aspect-ratio:1;width:min(100%,34dvh);margin-inline:auto;position:relative;animation:float 5s ease-in-out infinite}
+@media(min-width:860px){.heroart{width:min(100%,62dvh)}}
+@media(max-height:480px){.heroart{width:min(100%,60dvh)}}
+.pop{position:absolute;font-size:1.8rem;animation:float 4s ease-in-out infinite}
+.mini{position:absolute;right:-3%;bottom:-4%;width:38%;background:#fff;border:3px solid var(--brown);border-radius:50%;padding:4%;box-shadow:var(--shadow);animation:float 4.5s ease-in-out infinite .6s}
+.tagline{transform:none}
+.hl{color:#C45F0A}
+.eyebrow {
+  display: inline-block;
+  font-size: 2rem; /* Adjust size as needed (e.g., 24px, 1.5rem, 2em) */
+}

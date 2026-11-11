@@ -1,0 +1,44 @@
+/* Menu tab: all four flavors visible at once as boxes */
+#menu .center .lead{margin-top:.3rem}
+@media(max-height:760px){#menu .lead{display:none}}
+
+/* Grid: 2x2 on phones/tablets, 4 across on desktop */
+#products{grid-template-columns:repeat(2,1fr)!important;gap:.7rem;margin-top:.7rem}
+@media(min-width:1000px){#products{grid-template-columns:repeat(4,1fr)!important;gap:1rem}}
+/* Keep every card visible and hide the page arrows (works even with the old menu.js pager) */
+#products>.card[hidden]{display:flex!important}
+#products+.pg-ctl{display:none!important}
+
+/* Cards */
+.card{background:var(--white);border:2px solid var(--brown);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .2s;min-width:0}
+.card:hover{transform:translateY(-4px) rotate(-.5deg)}
+.card .pic{height:clamp(70px,17dvh,200px);background:radial-gradient(circle at 50% 40%,#fff3c4,var(--gold));border-bottom:2px solid var(--brown);display:grid;place-items:center;overflow:hidden}
+.card .pic img{width:100%;height:100%;object-fit:cover}
+.card .pic svg{height:92%;width:100%;transition:transform .3s}
+.card:hover .pic svg{transform:scale(1.07) rotate(3deg)}
+.card .body{padding:.6rem .75rem;display:flex;flex-direction:column;gap:.25rem;flex:1}
+.card h3{font-size:1.1rem}
+.card .body p{font-size:.88rem;line-height:1.3}
+.card .price{margin-top:auto;font-size:.9rem}
+.card .btn{width:100%}
+.tag{align-self:flex-start;background:var(--cream);border:1.5px solid var(--orange);color:var(--brown);font-size:.75rem;font-weight:700;padding:.05rem .65rem;border-radius:99px}
+
+/* Keep descriptions short on small screens so everything fits without scrolling */
+@media(max-width:699px){
+  .card .body h3+p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-size:.8rem}
+  .card .opts{display:none}
+  .card h3{font-size:1rem}
+}
+@media(max-height:700px){.card .body h3+p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.tag{display:none}}
+
+/* Promo strip */
+.promo-strip{margin:.8rem auto 0;width:min(1180px,92%);background:var(--orange);color:#fff;border:2px solid var(--brown);border-radius:99px;padding:.4rem 1rem;text-align:center;font-size:.9rem;text-shadow:0 1px 0 rgba(75,46,31,.6)}
+@media(max-height:720px),(max-width:700px){.promo-strip{display:none}}
+
+/* Landscape phones: four small boxes in one row */
+@media(max-height:480px){
+  #menu .center{display:none}
+  #products{grid-template-columns:repeat(4,1fr)!important;margin-top:0}
+  .card .body h3+p,.card .opts,.tag{display:none}
+  .card .pic{height:clamp(60px,26dvh,120px)}
+}

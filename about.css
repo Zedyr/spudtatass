@@ -1,0 +1,9 @@
+/* About Us tab */
+.two{display:grid;gap:1rem;align-items:center}
+@media(min-width:860px),(max-height:480px){.two{grid-template-columns:1.2fr .8fr;gap:2rem}}
+.about-art{background:var(--gold);border:3px solid var(--brown);border-radius:var(--r);height:min(34dvh,300px);display:grid;place-items:center}
+.about-art svg{height:85%;width:auto}
+@media(max-width:859px){.about-art{display:none}}
+.two .lead{margin-top:.5rem;font-size:.98rem}
+.box ul{padding-left:1.1rem;font-size:.95rem}
+@media(max-height:700px){.two .lead:first-of-type{display:none}}

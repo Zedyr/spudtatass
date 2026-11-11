@@ -1,0 +1,8 @@
+/* Contact tab */
+.two{display:grid;gap:1rem;align-items:center}
+@media(min-width:860px),(max-height:480px){.two{grid-template-columns:1.2fr .8fr;gap:2rem}}
+dl.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin-top:.7rem}
+dl.contact .cell{background:var(--white);border:2px solid #e8dcc0;border-radius:12px;padding:.4rem .7rem;font-size:.9rem;min-width:0;overflow-wrap:anywhere}
+dl.contact dt{font-weight:700;color:var(--brown);font-size:.8rem}
+.ph{background:#fff3c9;padding:0 .35rem;border-radius:6px;font-style:italic}
+@media(max-height:620px){.box p{font-size:.85rem}}
