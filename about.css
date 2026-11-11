@@ -7,3 +7,4 @@
 .two .lead{margin-top:.5rem;font-size:.98rem}
 .box ul{padding-left:1.1rem;font-size:.95rem}
 @media(max-height:700px){.two .lead:first-of-type{display:none}}
+
