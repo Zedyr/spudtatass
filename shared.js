@@ -7,7 +7,7 @@ const CONFIG = {
   email: null,        // e.g. "hello@example.com"
   instagram: null,    // full URL once confirmed
   facebook: null,     // full URL once confirmed
-  hours: null,        // e.g. "Daily, 10 AM - 8 PM"
+  hours: null,        // e.g. "Daily, 10 AM - 8 PM" 
   mapUrl: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("The Outlets at LIMA Estate, J.P. Laurel Highway, Lipa City, Batangas"),
   orderLink: null,    // real ordering link (Messenger, form, etc.) once configured
   sheetUrl: "https://script.google.com/a/macros/edustria.edu.ph/s/AKfycbxNrc07tPqjnDe5rxgvGZla8Owoo5H7Ab-QuvRaaW3uLYlaq0dGMZ9XzH-XzmfRvmrI/exec",
