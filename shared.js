@@ -3,9 +3,8 @@
    EDIT HERE: business settings (leave null until confirmed)
    ===================================================== */
 const CONFIG = {
-  phone: null,        // e.g. "+63 900 000 0000"
-  email: null,        // e.g. "hello@example.com"
-  instagram: null,    // full URL once confirmed
+  phone: null,     "+63 993 795 9216'   // e.g. "+63 900 000 0000"
+  email: null,        "spudtaneous@gmail.com"// e.g. "hello@example.com"
   facebook: null,     // full URL once confirmed
   hours: null, "8am to 10pm"       // e.g. "Daily, 10 AM - 8 PM" 
   mapUrl: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("The Outlets at LIMA Estate, J.P. Laurel Highway, Lipa City, Batangas"),
