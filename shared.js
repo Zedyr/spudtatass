@@ -10,7 +10,7 @@ const CONFIG = {
   hours: null, "8am to 10pm"       // e.g. "Daily, 10 AM - 8 PM" 
   mapUrl: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("The Outlets at LIMA Estate, J.P. Laurel Highway, Lipa City, Batangas"),
   orderLink: null,    // real ordering link (Messenger, form, etc.) once configured
-  sheetUrl: "https://script.google.com/a/macros/edustria.edu.ph/s/AKfycbxNrc07tPqjnDe5rxgvGZla8Owoo5H7Ab-QuvRaaW3uLYlaq0dGMZ9XzH-XzmfRvmrI/exec",
+  sheetUrl: "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec",
 };
 /* =====================================================
    EDIT HERE: products. price: number in pesos, or null.
