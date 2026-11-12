@@ -17,16 +17,16 @@ const CONFIG = {
    image: path/URL to a photo, or "" to use the cartoon art.
    ===================================================== */
 const PRODUCTS = [
-  { id:"cheese", name:"Overload Cheese", category:"Cheesy Classic", price:59, image:"", color:"#FFD84D",
+  { id:"cheese", name:"Overload Cheese", category:"Cheesy Classic", price:49, image:"", color:"#FFD84D",
     desc:"A savory potato or kamote base topped generously with grated quick-melt cheese. Special cheese sauce may be requested.",
     bases:["Potato"], cheeseSauce:true, side:null },
-  { id:"ham", name:"Ham and Cheese", category:"Savory Favorite", price:59, image:"", color:"#F7A8A0",
+  { id:"ham", name:"Ham and Cheese", category:"Savory Favorite", price:49, image:"", color:"#F7A8A0",
     desc:"A savory potato or kamote base with cooked ham and melted quick-melt cheese. Special cheese sauce may be requested.",
    bases:["Potato"], cheeseSauce:true, side:null },
-  { id:"beans", name:"Beans", category:"Hearty Pick", price:59, image:"", color:"#C0562B",
+  { id:"beans", name:"Beans", category:"Hearty Pick", price:49, image:"", color:"#C0562B",
     desc:"A potato or kamote base topped with canned beans. Special cheese sauce may be requested.",
    bases:["Potato"], cheeseSauce:true, side:null },
-  { id:"dilis", name:"Dilis", category:"Filipino-Inspired", price:70, image:"", color:"#9FB8C8",
+  { id:"dilis", name:"Dilis", category:"Filipino-Inspired", price:59, image:"", color:"#9FB8C8",
     desc:"A savory kamote topped with fried dilis. Vinegar on the side is optional. The special cheese sauce is not offered with this flavor.",
     bases:["Kamote"], cheeseSauce:false, vinegar:true },
  
