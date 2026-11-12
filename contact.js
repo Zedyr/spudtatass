@@ -6,7 +6,6 @@ function renderContact(){
     ["Business","Spudtaneous & Co. (quick-service food business)",null],
     ["Telephone",CONFIG.phone,CONFIG.phone&&"tel:"+CONFIG.phone.replace(/[^+\d]/g,"")],
     ["Email",CONFIG.email,CONFIG.email&&"mailto:"+CONFIG.email],
-    ["Instagram",CONFIG.instagram,CONFIG.instagram],
     ["Facebook",CONFIG.facebook,CONFIG.facebook],
     ["Operating hours",CONFIG.hours,null]
   ];
