@@ -24,7 +24,7 @@ const PRODUCTS = [
   { id:"beans", name:"Mork and Means", category:"Hearty Pick", price:49, image:"", color:"#C0562B",
     desc:"A potato or kamote base topped with canned beans. Special cheese sauce may be requested.",
     bases:["Potato"], cheeseSauce:true, side:null },
-  { id:"dilis", name:"Deal Is", category:"Filipino-Inspired", price:59, image:"", color:"#9FB8C8",
+  { id:"dilis", name:"DealhIs", category:"Filipino-Inspired", price:59, image:"", color:"#9FB8C8",
     desc:"A savory kamote topped with fried dilis. Vinegar on the side is optional. The special cheese sauce is not offered with this flavor.",
     bases:["Kamote"], cheeseSauce:false, vinegar:true },
 ];
