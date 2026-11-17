@@ -15,16 +15,16 @@ const CONFIG = {
 
 /* Products. price is pesos; image can be a path/URL or empty for cartoon art. */
 const PRODUCTS = [
-  { id:"cheese", name:"Overload Cheese", category:"Cheesy Classic", price:49, image:"", color:"#FFD84D",
+  { id:"cheese", name:"Chizmiz", category:"Cheesy Classic", price:49, image:"", color:"#FFD84D",
     desc:"A savory potato or kamote base topped generously with grated quick-melt cheese. Special cheese sauce may be requested.",
     bases:["Potato"], cheeseSauce:true, side:null },
   { id:"ham", name:"Haminchiz", category:"Savory Favorite", price:49, image:"", color:"#F7A8A0",
     desc:"A savory potato or kamote base with cooked ham and melted quick-melt cheese. Special cheese sauce may be requested.",
     bases:["Potato"], cheeseSauce:true, side:null },
-  { id:"beans", name:"Mork and Means", category:"Hearty Pick", price:49, image:"", color:"#C0562B",
+  { id:"beans", name:"Porque Beans", category:"Hearty Pick", price:49, image:"", color:"#C0562B",
     desc:"A potato or kamote base topped with canned beans. Special cheese sauce may be requested.",
     bases:["Potato"], cheeseSauce:true, side:null },
-  { id:"dilis", name:"DealhIs", category:"Filipino-Inspired", price:59, image:"", color:"#9FB8C8",
+  { id:"dilis", name:"Dilisious", category:"Filipino-Inspired", price:59, image:"", color:"#9FB8C8",
     desc:"A savory kamote topped with fried dilis. Vinegar on the side is optional. The special cheese sauce is not offered with this flavor.",
     bases:["Kamote"], cheeseSauce:false, vinegar:true },
 ];
