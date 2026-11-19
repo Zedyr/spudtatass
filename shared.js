@@ -10,7 +10,7 @@ const CONFIG = {
   mapUrl: "https://www.google.com/maps/search/?api=1&query=" +
     encodeURIComponent("The Outlets at LIMA Estate, J.P. Laurel Highway, Lipa City, Batangas"),
   orderLink: null,
-const sheetUrl: "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec",
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec",
 };
 
 /* Products. price is pesos; image can be a path/URL or empty for cartoon art. */
