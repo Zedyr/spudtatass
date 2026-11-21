@@ -2,7 +2,7 @@
 /* =====================================================
    EDIT HERE: business settings (leave null until confirmed)
    ===================================================== */
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec";
+sheetUrl: SCRIPT_URL,= "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec";
 
 const CONFIG = {
   phone: null,
