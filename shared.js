@@ -2,13 +2,15 @@
 /* =====================================================
    EDIT HERE: business settings (leave null until confirmed)
    ===================================================== */
-sheetUrl: SCRIPT_URL,= "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec";
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec";
 
 const CONFIG = {
   phone: null,
   email: null,
   facebook: null,
   hours: null,
+sheetUrl: SCRIPT_URL,
   mapUrl: "https://www.google.com/maps/search/?api=1&query=" +
     encodeURIComponent("The Outlets at LIMA Estate, J.P. Laurel Highway, Lipa City, Batangas"),
   orderLink: null,
