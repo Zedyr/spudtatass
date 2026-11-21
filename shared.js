@@ -2,7 +2,7 @@
 /* =====================================================
    EDIT HERE: business settings (leave null until confirmed)
    ===================================================== */
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec",
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx641GbPy0XNZHFOKpNC4tISPFZfAFiGyZQqThxTbVD1eFZme_79KaJ84XsIuHaBrdqoQ/exec";
 
 const CONFIG = {
   phone: null,
@@ -63,11 +63,11 @@ function art(kind, kamote=false) {
   const extras = {
     ham: [0,1,2].map(i => `<rect x="${68+i*22}" y="${58+(i%2)*6}" width="16" height="12" rx="3" fill="#F28B95" stroke="#4B2E1F" stroke-width="2.5" transform="rotate(${i*12-14} ${76+i*22} 66)"/>`).join(""),
     beans: [[72,66],[94,60],[116,66],[104,74],[84,76]].map(([x,y]) => `<ellipse cx="${x}" cy="${y}" rx="7" ry="5" fill="#7A2E14" stroke="#4B2E1F" stroke-width="2"/>`).join(""),
-    dilis: [[74,66,-15],[100,60,5],[124,68,18]].map(([x,y,r]) => `<g transform="rotate(${r} ${x} ${y})"><ellipse cx="${x}" cy="${y}" rx="13" ry="5" fill="#B8C4CC" stroke="#4B2E1F" stroke-width="2"/><path d="M${x+12} ${y}l8-6v12z" fill="#B8C4CC" stroke="#4B2E1F" stroke-width="2"/><circle cx="${x-7}" cy="${y-1}" r="1.5" fill="#4B2E1F"/></g>`).join(""),
+    dilis: [[74,66,-15],[100,60,5],[124,68,18]].map(([x,y,r]) => `<g transform="rotate(${r} ${x} ${y})"><ellipse cx="${x}" cy="${y}" rx="13" ry="5" fill="#B8C4CC" stroke="#4B2E1F" stroke-width="2"/></g>`).join(""),
     cheese: '<circle cx="80" cy="96" r="4" fill="#FFC83D" stroke="#4B2E1F" stroke-width="2"/><circle cx="124" cy="98" r="4" fill="#FFC83D" stroke="#4B2E1F" stroke-width="2"/>',
     hero: '<circle cx="86" cy="64" r="4" fill="#fff6d6"/><circle cx="118" cy="62" r="3" fill="#fff6d6"/>',
   }[kind] || "";
-  const eye = cx => `<g><circle class="eyew" cx="${cx}" cy="110" r="13" fill="#fff" ${stroke}/><g class="pupil"><circle cx="${cx}" cy="110" r="6.5" fill="#2a190f"/><circle cx="${cx+2.5}" cy="107.5" r="2.2" fill="#fff"/></g></g>`;
+  const eye = cx => `<g><circle class="eyew" cx="${cx}" cy="110" r="13" fill="#fff" ${stroke}/><g class="pupil"><circle cx="${cx}" cy="110" r="6.5" fill="#2a190f"/><circle cx="${cx+2.5}" cy="107.5" r="2" fill="#fff"/></g></g>`;
   const wrapper = document.createElement("div");
   wrapper.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 165" aria-hidden="true">
     <ellipse cx="100" cy="153" rx="70" ry="8" fill="rgba(75,46,31,.18)"/>
@@ -173,7 +173,7 @@ function renderCart() {
   $("#checkout").disabled=false;
   let total=0,incomplete=false;
   cart.forEach(item => {
-    const product=PRODUCTS.find(p=>p.id===item.pid);
+    const product=PRODUCTS.find(p => p.id===item.pid);
     const options=[item.base,item.sauce?"special cheese sauce":null,product.vinegar?(item.vinegar?"vinegar on the side: yes":"vinegar not requested"):null].filter(Boolean).join(" · ");
     let subtotal="Price to be confirmed";
     if (hasPrice(product)) { total+=product.price*item.qty; subtotal=peso(product.price*item.qty); }
