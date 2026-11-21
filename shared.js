@@ -3,7 +3,7 @@
    EDIT HERE: business settings (leave null until confirmed)
    ===================================================== */
 const SCRIPT_URL =
-  "https://script.google.com/a/macros/edustria.edu.ph/s/AKfycbwbFGSoColqQy_q4QWUK-epzF6wDm3wqUjMwfLtbXz3EGNeM9Mj5tBLpPKsvDNzdJAx1g/exec";
+  "https://script.google.com/a/macros/edustria.edu.ph/s/AKfycbyZaTrccOsCflePX_P3JPG4tweuihhfF5pQwjkXHUhiiNY0M3BFaee2MnISX26N6ukR9g/exec";
 
 const CONFIG = {
   phone: null,
