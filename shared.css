@@ -73,7 +73,17 @@ fieldset{border:2px solid #e8dcc0;border-radius:14px;padding:.7rem 1rem}
 legend{font-weight:700;padding:0 .4rem;color:var(--brown)}
 label.opt{display:flex;align-items:center;gap:.6rem;min-height:44px;cursor:pointer}
 input[type=radio],input[type=checkbox]{width:22px;height:22px;accent-color:var(--orange)}
-input[type=text],input[type=tel]{width:100%;font:inherit;padding:.6rem;border:2px solid var(--brown);border-radius:12px;background:#fff}
+input[type=text],
+input[type=tel],
+input[type=email] {
+  width: 100%;
+  min-height: 44px;
+  font: inherit;
+  padding: .6rem;
+  border: 2px solid var(--brown);
+  border-radius: 12px;
+  background: #fff;
+}
 select,textarea{width:100%;font:inherit;padding:.6rem;border:2px solid var(--brown);border-radius:12px;background:#fff}
 .err{color:#a01818;font-weight:700;min-height:1.4em}
 .qty{display:flex;align-items:center;gap:.6rem}
