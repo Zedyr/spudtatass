@@ -147,7 +147,7 @@ document.body.insertAdjacentHTML("beforeend", `<footer class="minifoot">© <span
   <div class="row" style="justify-content:space-between;align-items:center"><h2 id="cartTitle" style="font-size:1.6rem">Your Cart</h2><button class="btn alt sm" type="button" id="cartClose">Close</button></div>
   <div id="cartBody"></div><div id="cartSum"></div>
   <div><label for="custName"><strong>Your name</strong></label><input type="text" id="custName" maxlength="60" autocomplete="name"></div>
-  <div><label for="custPhone"><strong>Email Address (Active)</strong></label><input type="tel" id="custPhone" maxlength="20" autocomplete="tel"></div>
+  <div><label for="custPhone"><strong>Email Address (Active)</strong></label><input type="email" id="custPhone" maxlength="100" autocomplete="email"></div>
   <button class="btn dark" type="button" id="checkout">Review Order Summary</button>
   <p class="note" id="ckNote" hidden></p>
 </div></dialog><div class="toast" id="toast" role="status" aria-live="polite"></div>`);
