@@ -212,8 +212,8 @@ $("#checkout").addEventListener("click",async()=>{
     note.textContent="Demo checkout: no ordering channel is connected yet, so nothing has been sent to the business and no payment was taken.";
     return;
   }
-  const name=$("#custName").value.trim(),phone=$("#custPhone").value.trim();
-  if (!name||!phone) { note.textContent="Please enter your name and contact number first."; return; }
+  const email=$("#custPhone").value.trim(),phone=$("#custPhone").value.trim();
+  if (!name||!email) { note.textContent = "Please enter your name and active email address first."; return; }
   button.disabled=true;
   note.textContent="Sending your order…";
   const items=cart.map(item=>{
@@ -222,7 +222,7 @@ $("#checkout").addEventListener("click",async()=>{
       vinegar:product.vinegar?(item.vinegar?"Yes":"Not requested"):"",unitPrice:hasPrice(product)?product.price:null};
   });
   try {
-    const response=await fetch(CONFIG.sheetUrl,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({name,phone,items})});
+    const response=await fetch(CONFIG.sheetUrl,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({name,email,items})});
     const data=await response.json();
     if (!response.ok||!data.ok) throw new Error(data.error||"Order request failed");
     cart=[];
